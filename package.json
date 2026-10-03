@@ -1,0 +1,52 @@
+{
+  "name": "siafq-cis-am",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Frontend institucional de CIS-AM para SIAFQ+.",
+  "engines": {
+    "node": "24.12.0",
+    "pnpm": "12.8.1"
+  },
+  "packageManager": "pnpm@12.8.1",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "check:with-contracts": "pnpm contracts:check && pnpm check",
+    "contracts:check": "pnpm --dir tools/openapi-generator check",
+    "contracts:generate": "pnpm --dir tools/openapi-generator generate",
+    "dev": "vite",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b --pretty false"
+  },
+  "dependencies": {
+    "keycloak-js": "26.2.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router": "8.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "eslint": "10.11.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.13.0",
+    "jsdom": "30.1.1",
+    "prettier": "3.9.9",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.0",
+    "vite": "8.3.2",
+    "vitest": "5.0.3"
+  }
+}

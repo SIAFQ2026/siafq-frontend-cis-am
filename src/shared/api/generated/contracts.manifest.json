@@ -1,0 +1,19 @@
+{
+  "backendCommit": "eeee41dfa3e03dd119802499f3a40de983046325",
+  "generators": {
+    "openapiTypescript": "7.13.0",
+    "typescript": "5.9.3"
+  },
+  "contracts": [
+    {
+      "id": "governance",
+      "source": "siafq-backend/modules/governance/src/main/resources/openapi/governance-api-openapi.yml",
+      "sha256": "53bd33a146cb84364c0f552e5908aab755b8f30ea872b1b92f474bc1d5341aa2"
+    },
+    {
+      "id": "iam",
+      "source": "siafq-backend/modules/iam/src/main/resources/openapi/iam-api-openapi.yml",
+      "sha256": "5812cd873e68acf2448da7f66c8b92bde015cfb992ca28ed0975c2087ebc42e4"
+    }
+  ]
+}

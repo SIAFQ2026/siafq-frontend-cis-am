@@ -1,0 +1,14 @@
+{
+  "name": "@siafq-cis-am/openapi-generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node generate.mjs --check",
+    "generate": "node generate.mjs"
+  },
+  "devDependencies": {
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3"
+  }
+}
